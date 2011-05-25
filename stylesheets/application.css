@@ -34,17 +34,31 @@ table.list thead th {
 /* Issues grid styles by priorities (provided by Wynn Netherland) */
 table.list tr.issue a { color: #666; }
 
+/* priorities */
+/* Low */
+tr.priority-1 .priority { background: #D6E9BA; color: #666; }
+/* Normal */
+tr.priority-2 .priority { background: #A8D26C; color: #666;  }
+/* High */
+tr.priority-3 .priority { background: #ffa500; color: #FFFFFF; }
+/* Urgent */
+tr.priority-4 .priority { background: #FF0000; color: #FFFFFF; }
+/* Imediate */
+tr.priority-5 .priority { background: #FF0000; color: #FFFFFF; }
+
 /* statuses */
 /*new*/
-tr.status-1 { background: #D6E9BA; }
+tr.status-1 { background: #DFEFFC; }
 /*feedback*/
-tr.status-2 { background: #C94C22; }
+tr.status-2 { background: #ffff99; }
 /*in-progress*/
-tr.status-3 { background: #CAD26C; }
-/*verify, closed*/
-tr.status-4, tr.status-5 { background: #A8D26C; }
+tr.status-3 { background: #BFCFDC; }
+/*verify*/
+tr.status-4, tr.status-4 .priority { background: white; color: #666; }
+/*closed*/
+tr.status-5, tr.status-5 .priority { background: white; color: #666; }
 /*rejected*/
-tr.status-6 { background: #C94C22; }
+tr.status-6, tr.status-6 .priority { background: white; color: #666; }
 
 /* Buttons */
 input[type="button"], input[type="submit"], input[type="reset"] { background-color: #f2f2f2; color: #222222; border: 1px outset #cccccc; }
